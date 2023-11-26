@@ -1,6 +1,7 @@
 # vidarchive
-`let stuffallowd = ['18+', 'FullMovies','TorrentedGames']`
-`console.log("welcome to vidarchive, well, it's not a video archive only, it archives EVERYTHING, you name it: " + stuffallowed)`
+`let stuffallowd = ['18+', 'FullMovies','TorrentedGames']
+
+console.log("welcome to vidarchive, well, it's not a video archive only, it archives EVERYTHING, you name it: " + stuffallowed)`
 
 ____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
