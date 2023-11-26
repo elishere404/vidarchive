@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{$file-name}</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap');
+    body{
+        background-color:rgb(45,52,53);
+    }
+.navbar { 
+    width: 1500px;
+    height: 3rem;
+    background-color:black;
+    overflow: hidden;
+    position:absolute;
+    right:0;
+    margin-top: -2rem;
+}
+header { 
+    font-family: Bebas Neue;
+    font-size: 6rem;
+    text-align: center;
+    margin-top:30px;
+}
+.img { 
+    text-align: center;
+}
+.imagecomment{
+    width:30rem;
+}
+.textwall{
+    font-family: Arial;
+    font-size: 17px;
+    text-align:center;
+    overflow: hidden;
+    position: absolute;
+}
+@media screen and (max-width:500px) {
+    .textwall{
+        font-size:16px;
+    }
+    .imagecomment{
+        width:400px;
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    .textwall {
+        font-size:16px;
+    }
+    .imagecomment {
+        width: 250px;
+    }
+    }
+      </style>
+</head>
+<body>
+    <nav class="navbar">
+
+    </nav>
+
+    <header>
+        {$file-name}
+    </header>
+    <div class="img">
+        <{tag} src="images/goofycom.png" class = "imagecomment">
+    </div>
+
+    <div class="divb">
+        <p class="textwall">
+            Uploaded: {$date} 
+            Type: {$file-extension}
+            Backdoor Code Detected: {$falseOrTrue}
+        </p>
+    </div>
+</body>
+</html>
