@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxArchive</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      margin-right: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>BoxArchive - Upload Everything</h1>
+  <a href="/uploads/">Search</a>
+
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Select File:</label>
+    <input type="file" name="file" id="file" accept="*">
+    <p>please upload torrents in zip files, else, it will be deleted automatically</p>
+    <button type="submit">Upload</button>
+  </form>
+</body>
+</html> 

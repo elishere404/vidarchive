@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoxArchive - Search</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin: 10px 0;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    p {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Page</h1>
+
+  <% if (searchResults.length > 0) { %>
+    <ul>
+      <% searchResults.forEach(result => { %>
+        <li><%= result %></li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>No results found.</p>
+  <% } %>
+
+  <a href="/">Back to Home</a>
+</body>
+</html>
